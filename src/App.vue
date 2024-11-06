@@ -15,11 +15,11 @@ import Card from './components/Card.vue'
 import { ref, watch, onMounted, onUnmounted, defineComponent } from 'vue'
 
 /** url for fetch users */
-let userurl = 'https://randomuser.me/api/'
+let userurl: string = 'https://randomuser.me/api/'
 /** volume fetch users data count */
-let resultsvolume = 200;
+let resultsvolume: number = 200;
 /** pixels before preload another portion of data */
-let reloadbefore = 10000;
+let reloadbefore: number = 10000;
 
 /** Response interface for fetch */
 interface Response extends Body {
